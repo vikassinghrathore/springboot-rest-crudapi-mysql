@@ -37,4 +37,9 @@ public class ServiceImpl implements UserService {
                 .build();
 
     }
+
+    @Override
+    public void deleteUser(Long id) {
+        userRepository.deleteById(id);
+    }
 }
