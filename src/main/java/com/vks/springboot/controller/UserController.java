@@ -30,4 +30,10 @@ public class UserController {
     public ResponseEntity<Optional<User>> getUserById(@PathVariable Long id) {
         return new ResponseEntity<>(userService.getUserById(id), HttpStatus.OK);
     }
+
+    @PutMapping("{id}")
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
+        user.setId(id);
+        return new ResponseEntity<>(userService.updateUser(user), HttpStatus.OK);
+    }
 }
