@@ -1,4 +1,5 @@
 ## Test Spring Boot CRUD REST APIs using Postman Client
+### Spring Boot REST API CRUD Example(used Spring Boot 3+Lombok+Spring Data JPA+MySQL Database.)
 ### Create User REST API:
 
 http://localhost:8080/api/users
@@ -23,3 +24,7 @@ return updatedUser;
 
 http://localhost:8080/api/users/4
 ![img_3.png](img_3.png)
+
+### Delete User REST API:
+http://localhost:8080/api/users/1
+![img_4.png](img_4.png)
