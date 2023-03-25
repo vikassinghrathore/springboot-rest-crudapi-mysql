@@ -28,4 +28,13 @@ public class ServiceImpl implements UserService {
     public Optional<User> getUserById(Long id) {
         return Optional.of(userRepository.findById(id).get());
     }
+
+    @Override
+    public User updateUser(User user) {
+        userRepository.findById(user.getId()).get();
+        return userRepository.save(user).builder()
+                .id(user.getId()).firstName(user.getFirstName()).lastName(user.getLastName()).email(user.getEmail())
+                .build();
+
+    }
 }
