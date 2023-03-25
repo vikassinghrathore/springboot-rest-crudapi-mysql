@@ -1,5 +1,8 @@
 ## Test Spring Boot CRUD REST APIs using Postman Client
 ### Spring Boot REST API CRUD Example(used Spring Boot 3+Lombok+Spring Data JPA+MySQL Database.)
+### Create Database schema My Sql Workbench
+![img_5.png](img_5.png)
+
 ### Create User REST API:
 
 http://localhost:8080/api/users
